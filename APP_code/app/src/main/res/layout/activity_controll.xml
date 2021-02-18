@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/color_internet_blue"
+tools:context=".Controll">
+
+    <ImageView
+    android:id="@+id/imageView4"
+    android:layout_width="320dp"
+    android:layout_height="268dp"
+    android:layout_alignParentLeft="false"
+    android:layout_alignParentRight="false"
+    android:layout_alignParentBottom="true"
+    app:srcCompat="@drawable/sticker" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/handMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:text="手調模式" />
+
+        <RadioButton
+            android:id="@+id/btMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="藍芽模式" />
+
+        <RadioButton
+            android:id="@+id/lightMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="光控模式" />
+
+    </RadioGroup>
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+
+        android:layout_marginTop="180dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberPicker"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="設定"
+        android:textColor="@color/purple_500"
+        app:backgroundTint="@color/color_internet_brown" />
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="重新整理" />
+</RelativeLayout>
+
